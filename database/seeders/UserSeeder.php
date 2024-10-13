@@ -22,7 +22,7 @@ class UserSeeder extends Seeder
 
         // Seeder untuk Super Admin
         $admin = User::updateOrCreate(
-            ['email' => 'admin@sinmaofficial.com'],  // Kondisi pencarian
+            ['email' => 'sinmaofficial@gmail.com'],  // Kondisi pencarian
             [
                 'name' => 'Super Admin',
                 'password' => bcrypt('12345678'),
