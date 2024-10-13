@@ -21,6 +21,8 @@ return new class extends Migration
             $table->string('password');
             $table->string('avatar')->nullable();
             $table->string('department');
+            $table->string('phone_number')->nullable(); // Menambahkan kolom phone_number
+            $table->string('address')->nullable(); // Menambahkan kolom address
             $table->rememberToken();
             $table->timestamps();
         });

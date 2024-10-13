@@ -23,7 +23,7 @@
                     <div class="mb-3">
                         <label class="form-label">Nama</label>
                         <input type="text" class="form-control @error('name') is-invalid @enderror"
-                            placeholder="masukan nama anda" name="name">
+                            placeholder="masukan nama anda" name="name" required>
                         @error('name')
                         <div class="invalid-feedback">
                             {{ $message }}
@@ -31,9 +31,9 @@
                         @enderror
                     </div>
                     <div class="mb-3">
-                        <label class="form-label">Email</label>s
+                        <label class="form-label">Email</label>
                         <input type="email" class="form-control @error('email') is-invalid @enderror"
-                            placeholder="masukan email anda" name="email">
+                            placeholder="masukan email anda" name="email" required>
                         @error('email')
                         <div class="invalid-feedback">
                             {{ $message }}
@@ -45,7 +45,7 @@
                     <!-- <div class="mb-3">
                         <label class="form-label">Nomor HP</label>
                         <input type="text" class="form-control @error('phone_number') is-invalid @enderror"
-                            placeholder="masukan nomor HP anda" name="phone_number">
+                            placeholder="masukan nomor HP anda" name="phone_number" required>
                         @error('phone_number')
                         <div class="invalid-feedback">
                             {{ $message }}
@@ -68,7 +68,7 @@
                     <div class="mb-3">
                         <label class="form-label">Kata Sandi</label>
                         <input type="password" class="form-control @error('password') is-invalid @enderror"
-                            placeholder="masukan kata sandi anda" name="password">
+                            placeholder="masukan kata sandi anda" name="password" required>
                         @error('password')
                         <div class="invalid-feedback">
                             {{ $message }}
@@ -78,7 +78,7 @@
                     <div class="mb-3">
                         <label class="form-label">Konfirmasi Kata Sandi</label>
                         <input type="password" class="form-control @error('password_confirmation') is-invalid @enderror"
-                            placeholder="masukan konfirmasi kata sandi anda" name="password_confirmation">
+                            placeholder="masukan konfirmasi kata sandi anda" name="password_confirmation" required>
                         @error('password_confirmation')
                         <div class="invalid-feedback">
                             {{ $message }}

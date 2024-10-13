@@ -35,13 +35,6 @@ use App\Http\Controllers\Auth\AuthenticatedSessionController;
 
 Route::get('/', [LandingController::class, 'index'])->name('landing');
 
-// Route::get('/admin/dashboard', DashboardController::class)
-//     ->name('admin.dashboard')
-//     ->middleware('permission:index-dashboard');
-
-// Route::get('/customer/dashboard', CustomerDashboardController::class)
-//     ->name('customer.dashboard');
-
 Route::get('/landing', [LandingController::class, 'index'])->name('landing');
 
 Route::controller(LandingCategoryController::class)->as('category.')->group(function () {
